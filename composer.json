@@ -1,0 +1,11 @@
+{
+    "name": "administrator/pacon",
+    "type": "project",
+    "authors": [
+        {
+            "name": "chen",
+            "email": "fang123337@qq.com"
+        }
+    ],
+    "require": {}
+}
