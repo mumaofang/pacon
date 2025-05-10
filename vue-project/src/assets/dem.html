@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+
+    <style>
+        .arrow-container {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+
+        .arrow-line {
+            position: absolute;
+            width: 2px;
+            height: 25px;
+            background: #333;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .arrow-line::after {
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-right: 2px solid #333;
+            border-bottom: 2px solid #333;
+            bottom: 0;
+            left: -5px;
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <style>
+        .animated-arrow {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .animated-arrow span {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #333;
+            transition: all 0.3s;
+        }
+
+        .animated-arrow span:first-child {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .animated-arrow span:last-child {
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .animated-arrow:hover span {
+            background: #007bff;
+            transform: translateY(10px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="arrow-down"></div> -->
+
+    <div class="arrow-container">
+        <div class="arrow-line"></div>
+    </div>
+
+</body>
+
+</html>

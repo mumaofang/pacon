@@ -1,0 +1,58 @@
+{
+  "geometry": {
+    "word": "geometry",
+    "phonetic": {
+      "uk": "/dʒiˈɒm.ə.tri/",
+      "us": "/dʒiˈɑː.mə.tri/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/geometry--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=geometry&type=1"
+    },
+    "from": "geometry",
+    "translation": "几何学",
+    "notes": "‌画出几何图形（如正方形、圆、三角形），标注单词 ‌geometry‌。\n关联著名定理：勾股定理（Pythagorean theorem）、欧几里得（Euclid）。"
+  },
+  "material": {
+    "word": "material",
+    "phonetic": {
+      "uk": "/məˈtɪə.ri.əl/",
+      "us": "/məˈtɪr.i.əl/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/material--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=material&type=1"
+    },
+    "from": "material",
+    "translation": "材料",
+    "notes": "🌟记忆点：妈妈每天裁剪各种布料（material）"
+  },
+  "vertex": {
+    "word": "vertex",
+    "phonetic": {
+      "uk": "/ˈvɜː.teks/",
+      "us": "/ˈvɝː.t̬eks/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/vertex--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=vertex&type=1"
+    },
+    "from": "vertex",
+    "translation": "顶点",
+    "notes": "‌vert-‌（转动） + ‌-ex‌（向外）：\n拉丁语中，“vertex”原指“漩涡”（旋转的中心），后引申为“最高点”或“顶端”（如头顶、山峰顶等）"
+  },
+  "execution": {
+    "word": "execution",
+    "phonetic": {
+      "uk": "/ˌek.sɪˈkjuː.ʃən/",
+      "us": "/ˌek.səˈkjuː.ʃən/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/execution--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=execution&type=1"
+    },
+    "from": "execution",
+    "translation": "执行",
+    "notes": ""
+  }
+}

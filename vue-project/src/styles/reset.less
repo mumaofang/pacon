@@ -1,0 +1,34 @@
+/* 精简版现代 CSS 重置 */
+*, *::before, *::after {
+    box-sizing: border-box; /* 统一盒模型 */
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth; /* 平滑滚动 */
+  }
+  
+  body {
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased; /* 字体抗锯齿 */
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%; /* 防止媒体溢出 */
+  }
+  
+  input, button, textarea, select {
+    font: inherit; /* 继承字体样式 */
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; /* 长文本换行 */
+  }
+  
+  #root, #__next {
+    isolation: isolate; /* 创建新的层叠上下文 */
+  }
