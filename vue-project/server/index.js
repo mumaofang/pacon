@@ -132,6 +132,23 @@ app.post('/api/getAiAnswer', async (req, res) => {
         items
     })
 })
+app.post('/api/getAiAnswerForPrompt', async (req, res) => {
+    let promptWord = req.body.data;
+    // let clickNum = req.body.clickNum;
+    // // 每增加一次点击就需要修改提示词
+
+    // let promptWord = '如何快速的记住单词' + word;
+    // if (clickNum > 1) {
+    //     promptWord = `如何快速${getPrompts(clickNum)}的记住单词` + word;
+    // }
+    console.log(promptWord)
+    let items = await getAiAnswer(promptWord);
+    res.json({
+        success: true,
+        code: 1,
+        items
+    })
+})
 
 app.listen(port, () => {
     console.log("example app listening on port 3002")

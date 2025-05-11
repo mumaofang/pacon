@@ -54,5 +54,75 @@
     "from": "execution",
     "translation": "执行",
     "notes": ""
+  },
+  "assign": {
+    "word": "assign",
+    "phonetic": {
+      "uk": "/əˈsaɪn/",
+      "us": "/əˈsaɪn/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/assign--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=assign&type=1"
+    },
+    "from": "assign",
+    "translation": "分派",
+    "notes": "拆分‌：‌as-‌（前缀，表“朝向”）+ ‌sign‌（标记、符号）。\n‌联想‌：把任务“‌标记‌（sign）给某人”就是“分配、指派”（assign）。\n‌场景‌：想象领导在你的报告上签（sign）字，‌指派‌你去执行任务。"
+  },
+  "availability": {
+    "word": "availability",
+    "phonetic": {
+      "uk": "/əˌveɪ.ləˈbɪl.ə.ti/",
+      "us": "/əˌveɪ.ləˈbɪl.ə.t̬i/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/availability--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=availability&type=1"
+    },
+    "from": "availability",
+    "translation": "可利用性",
+    "notes": "‌avail‌（动词，意为“有用”） + ‌ability‌（能力，名词后缀）\n➠ ‌availability‌（可用性，名词）\n‌Tips：‌ 将“available”（可用的）去掉结尾的“e”，加上“-ity”构成名词。"
+  },
+  "until": {
+    "word": "until",
+    "phonetic": {
+      "uk": "/ənˈtɪl/",
+      "us": "/ənˈtɪl/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/until--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=until&type=1"
+    },
+    "from": "until",
+    "translation": "直到",
+    "notes": "‌拆分‌：un（谐音“嗯”） + til（谐音“提了”）\n‌联想‌：\n“‌嗯‌（un），直到你‌提了‌（til）要求，我才会开始行动！”\n通过谐音和场景画面加深记忆。"
+  },
+  "pronoun": {
+    "word": "pronoun",
+    "phonetic": {
+      "uk": "/ˈprəʊ.naʊn/",
+      "us": "/ˈproʊ.naʊn/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/pronoun--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=pronoun&type=1"
+    },
+    "from": "pronoun",
+    "translation": "代词",
+    "notes": "pro-‌（前缀，表示“代替”）+ ‌noun‌（名词）= ‌pronoun‌（代词，即“代替名词的词”）。\n‌联想‌：用“pro”（专业）来“代替”（noun），就不会重复说名词啦！"
+  },
+  "repository": {
+    "word": "repository",
+    "phonetic": {
+      "uk": "/rɪˈpɒz.ɪ.tər.i/",
+      "us": "/rɪˈpɑː.zɪ.tɔːr.i/"
+    },
+    "mp3": {
+      "google": "https://ssl.gstatic.com/dictionary/static/sounds/oxford/repository--_us_1.mp3",
+      "youdao": "https://dict.youdao.com/dictvoice?audio=repository&type=1"
+    },
+    "from": "repository",
+    "translation": "仓库",
+    "notes": "热珀斯托瑞兹\n‌Ories‌ → 结尾类似 ‌“stories”‌（故事），想象“仓库里存放着许多古老的故事（ories）”。"
   }
 }

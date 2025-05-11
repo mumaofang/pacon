@@ -55,6 +55,15 @@ export async function getAiAnswer(data) {
     let res: ApiResponse = await Axios.post('/api/getAiAnswer', { ...data });
     return res;
 }
+export async function getAiAnswerForPrompt(data) {
+    interface ApiResponse {
+        success: boolean,
+        code: number,
+        items?: object
+    }
+    let res: ApiResponse = await Axios.post('/api/getAiAnswerForPrompt', { ...data });
+    return res;
+}
 
 export async function saveNotesApi(data) {
     interface ApiResponse {

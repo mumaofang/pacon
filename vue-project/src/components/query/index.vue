@@ -2,7 +2,7 @@
 import { reactive, ref } from 'vue';
 import { isAllEnglish } from '@/assets/js/common'
 import { ElMessage } from 'element-plus';
-import { getData, save, getAiAnswer, saveNotesApi } from '@/api/getApi'
+import { getData, save, getAiAnswer, getAiAnswerForPrompt, saveNotesApi } from '@/api/getApi'
 import { getSettingInfo } from '@/stores/setting'
 import { useBaseInfoStore } from '@/stores/base';
 const baseInfo = useBaseInfoStore();
@@ -27,6 +27,7 @@ const isShoucan = ref(true)
 let aiAnswer = ref([])
 const aiLoading = ref(false)
 const clickMap = reactive({})
+const promptWord = ref('');
 async function queryContent() {
     if (!wordInof.word) return;
     if (!isAllEnglish(wordInof.word)) {
@@ -86,6 +87,20 @@ async function aiKj() {
     console.log(clickMap)
 
 }
+async function aiAnswerForPrompt() {
+    aiLoading.value = true;
+    if (clickMap[wordInof.word]) {
+        clickMap[wordInof.word]++;
+    } else {
+        clickMap[wordInof.word] = 1;
+    }
+    const res = await getAiAnswerForPrompt({ data: promptWord.value })
+
+    aiLoading.value = false;
+    aiAnswer.value = res.items[1]
+    console.log(clickMap)
+
+}
 const isAddNotes = ref(false)
 
 async function addNotes() {
@@ -99,6 +114,7 @@ async function saveNotes() {
 
 }
 
+
 </script>
 <template>
 
@@ -111,6 +127,12 @@ async function saveNotes() {
             </div>
             <div>
                 <el-button @click="queryContent" :loading="queryLoading">查询</el-button>
+            </div>
+            <div class="query-input-box">
+                <el-input v-model.trim="promptWord" placeholder="请输入单词" />
+            </div>
+            <div>
+                <el-button @click="aiAnswerForPrompt" :loading="queryLoading">Ai查询</el-button>
             </div>
 
 
@@ -168,7 +190,7 @@ async function saveNotes() {
                             <div v-for="item in wordInof.notes.split('\n')">{{ item }}</div>
                         </div>
                         <div v-else>
-                            <el-input v-model="wordInof.notes" maxlength="100" placeholder="请输入笔记内容，最多100个字，多了也记不住"
+                            <el-input v-model="wordInof.notes" maxlength="200" placeholder="请输入笔记内容，最多100个字，多了也记不住"
                                 show-word-limit :rows="10" type="textarea" />
 
                             <div class="add-save-btn"><el-button text @click="saveNotes">保存</el-button></div>
