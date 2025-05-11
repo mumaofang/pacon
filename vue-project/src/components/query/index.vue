@@ -107,7 +107,7 @@ async function saveNotes() {
 
         <div class="query-input">
             <div class="query-input-box">
-                <el-input v-model.trim="wordInof.word" placeholder="请输入单词" />
+                <el-input @keyup.enter.native="queryContent" v-model.trim="wordInof.word" placeholder="请输入单词" />
             </div>
             <div>
                 <el-button @click="queryContent" :loading="queryLoading">查询</el-button>

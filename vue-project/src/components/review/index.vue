@@ -161,7 +161,7 @@ function handleEnterWord() {
                                     <el-popconfirm width="320" hide-icon confirm-button-text="记住了"
                                         :title="wordInfo.translation || ''">
                                         <template #reference>
-                                            <el-button>查看</el-button>
+                                            <el-button>提示</el-button>
                                         </template>
                                     </el-popconfirm>
                                 </div>
@@ -181,7 +181,7 @@ function handleEnterWord() {
                                     placeholder="请输入对应的英文，按回车验证" />
                                 <el-popconfirm width="320" hide-icon confirm-button-text="记住了" :title="wordInfo.word">
                                     <template #reference>
-                                        <el-button>查看</el-button>
+                                        <el-button>提示</el-button>
                                     </template>
                                 </el-popconfirm>
                             </div>
